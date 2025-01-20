@@ -19,9 +19,9 @@ def is_enabled(value, default):
 
 # Bot information *
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '1332816'))
-API_HASH = environ.get('API_HASH', "68e791e616100248098b0a53ae86a661a12")
-BOT_TOKEN = environ.get('BOT_TOKEN', "78237399995:AAHXWFjY5qN87YAR36eb3BDCFsGMu9jafHU68")
+API_ID = int(environ.get('API_ID', '29155314'))
+API_HASH = environ.get('API_HASH', "8c612d2371bb07cd405adec606582b60")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8016251564:AAH_HUZaeyVhGE0GSX1xQfkBp7W3U9-qdmg")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -46,14 +46,14 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 LAZY_DIVERTING_CHANNEL_ID = environ.get('LAZY_DIVERTING_CHANNEL_ID', '-1002178995654').split()
 
 # MongoDB information *
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://lazy:Zabintkhab7808@lazydev786.lpvunl5.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://iamthedevilonly:Devil@yuvrajvs.pmhyz.mongodb.net/?retryWrites=true&w=majority&appName=yuvrajvs")
 DATABASE_NAME = environ.get('DATABASE_NAME', "lazydev786")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Lazy_filesx')
 
 # LOG CHANNELS *
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001820894005'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002394165174'))
 LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', '-1001990341540'))
-REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1001855682845'))
+REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1002243970336'))
 PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS', '-1002213371318'))
 
 # PREMIUM ACCESS *
@@ -64,7 +64,7 @@ LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id o
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 
 # Others
-TUTORIAL = environ.get('TUTORIAL', 'https://t.me/+mRjdECDBKjYwNzhl/186') # Tutorial video link for opening shortlink website 
+TUTORIAL = environ.get('TUTORIAL', 'https://t.me/how_to_download_movies_ws') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
@@ -86,8 +86,8 @@ LAZY_MODE = bool(environ.get("LAZY_MODE", True))
 
 # Requested Content Template Variables
 ADMIN_USRNM = environ.get('ADMIN_USRNM', 'real_Heros')
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM', '+mRjdECDBKjYwNzhl')
-MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', 'movies_request_to_me')
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM', 'premium_movies_webseries)
+MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', '+WfNT6nCDpOZkMTM1')
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
