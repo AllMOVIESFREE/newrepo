@@ -43,7 +43,7 @@ auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-LAZY_DIVERTING_CHANNEL_ID = environ.get('LAZY_DIVERTING_CHANNEL_ID', '-1002178995654').split()
+LAZY_DIVERTING_CHANNEL_ID = environ.get('LAZY_DIVERTING_CHANNEL_ID', '-1002248439945').split()
 
 # MongoDB information *
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://iamthedevilonly:Devil@yuvrajvs.pmhyz.mongodb.net/?retryWrites=true&w=majority&appName=yuvrajvs")
@@ -52,9 +52,9 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Lazy_filesx')
 
 # LOG CHANNELS *
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002394165174'))
-LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', '-1001990341540'))
+LAZY_GROUP_LOGS = int(environ.get('LAZY_GROUP_LOGS', '-1002248439945'))
 REQ_CHANNEL = int(environ.get('REQ_CHANNEL', '-1002243970336'))
-PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS', '-1002213371318'))
+PRIME_MEMBERS_LOGS = int(environ.get('PRIME_MEMBERS_LOGS', '-1002248439945'))
 
 # PREMIUM ACCESS *
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '5965340120').split()]
